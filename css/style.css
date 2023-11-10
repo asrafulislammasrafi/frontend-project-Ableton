@@ -1,0 +1,476 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+input,
+textarea {
+  outline: none;
+  border: none;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  background-color: #f3f3f3;
+}
+
+#main {
+  background: #ffffff;
+  min-height: 100vh;
+}
+
+header nav {
+  padding: 0 2.4rem;
+  border-bottom: 1px solid #e7e5e5;
+}
+header * {
+  font-weight: 500;
+}
+header ul {
+  display: flex;
+  gap: 2rem;
+}
+header ul li button {
+  background-color: transparent;
+  color: #ff764d;
+  font-size: 16px;
+}
+header .navContainer {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 20px;
+}
+header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  transition: all 300ms ease-out;
+  width: 100%;
+}
+header .nav a svg {
+  width: 60px;
+  height: 28px;
+}
+header .nav .logo_link {
+  display: flex;
+  -moz-column-gap: 3rem;
+       column-gap: 3rem;
+}
+header .smNav {
+  display: none;
+}
+header .login a:nth-child(1) {
+  color: #0000ff;
+  margin-right: 2rem;
+}
+header .about a {
+  color: #ff764d;
+}
+header .dropdownMenu {
+  display: none;
+  padding: 0.6rem 0 2rem 0;
+}
+header .dropdownMenu h3 {
+  font-size: 25px;
+  margin: 1rem 0;
+}
+header .dropdownMenu h4 {
+  font-weight: 600;
+}
+header .dropdownMenu .dorpDownMsg h3 {
+  padding-top: 30px;
+}
+header .dropdownMenu p {
+  font-size: 16px;
+  margin: 0.6rem 0;
+  line-height: 1.8rem;
+  text-align: left;
+}
+header .active {
+  display: block;
+}
+header .about__header {
+  padding: 1.25rem 2.4rem;
+}
+
+main .header {
+  background-image: url(../img/header.jpg);
+  height: calc(100vh - 120px);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: grid;
+  margin: 0 100px 0px 100px;
+  place-items: center;
+}
+main .header svg.page-about__header__ableton-logo {
+  width: 100%;
+}
+main .imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  width: 100%;
+  position: relative;
+  height: 933.33333px;
+}
+main .imageContainer .bg1 {
+  background-image: url(../img/photo-1.jpg);
+  background-size: cover;
+  height: 600px;
+  width: 40%;
+  z-index: 100;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+main .imageContainer .bg2 {
+  background-image: url(../img/photo-2.jpg);
+  background-size: cover;
+  width: 30%;
+  height: 250px;
+  z-index: 100;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+main .imageContainer .bg {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #fbffa7;
+  width: 62%;
+  height: 933.33333px;
+}
+
+.imgcon2 #imgcon2bg {
+  background-color: #b6ffc0;
+  left: 0;
+}
+.imgcon2 .bg3 {
+  height: 100%;
+  padding: 3rem;
+  width: 40%;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 6rem;
+}
+.imgcon2 .bg3 .img1 {
+  background-image: url(../img/photo-3.jpg);
+  background-size: cover;
+  z-index: 100;
+  height: 340px;
+  width: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.imgcon2 .bg3 .img2 {
+  background-image: url(../img/photo-4.jpg);
+  background-size: cover;
+  z-index: 100;
+  height: 340px;
+  width: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.imgcon2 .bg4 {
+  background-image: url(../img/photo-5.jpg);
+  background-size: cover;
+  height: 600px;
+  width: 40%;
+  z-index: 100;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  margin-right: 4rem;
+}
+
+.card-container {
+  margin: 0 100px 0px 100px;
+}
+.card-container .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  flex-wrap: wrap;
+}
+.card-container .card .card-img {
+  width: 50%;
+  height: 100%;
+}
+.card-container .card .card-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.card-container .card .card-text {
+  padding: 4rem;
+  flex: 1 1 50%;
+  width: 50%;
+  height: 100%;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #b1c5ff;
+  gap: 30px;
+}
+.card-container .card .card-text p {
+  line-height: 1.4;
+  font-size: 16px;
+}
+.card-container .card .card-text a {
+  color: #0000ff;
+}
+
+.about-page-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+  width: 100%;
+  margin-top: 50px;
+}
+.about-page-text div {
+  width: 70%;
+}
+.about-page-text h1 {
+  line-height: 1.5;
+  font-size: 22px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  margin: 2rem 0;
+}
+.about-page-text h1 a {
+  color: #0000ff;
+}
+.about-page-text p {
+  line-height: 1.5;
+  font-size: 16px;
+}
+
+.video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.video div {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+}
+.video div iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+}
+.video div small {
+  padding: 1rem;
+  font-weight: 600;
+}
+
+@media screen and (min-width: 100em) {
+  #main {
+    max-width: 100rem;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 540px) {
+  #main {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .card-container {
+    height: auto;
+    font-size: 16px;
+    font-weight: 600;
+    width: 100%;
+    margin: 0;
+  }
+  .card-container .card {
+    flex-wrap: wrap;
+  }
+  .card-container .card .card-text,
+  .card-container .card .card-img {
+    min-width: 100%;
+  }
+}
+footer {
+  padding: 10rem 10rem 5rem 10rem;
+  line-height: 1.4;
+}
+footer .footer {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+footer .footer h5 {
+  font-weight: 600;
+  font-size: 1rem;
+}
+footer .footer h1 {
+  font-size: 4rem;
+}
+footer .footer .heading {
+  display: grid;
+  grid-template-columns: 1fr 1fr 40%;
+  align-items: start;
+}
+footer .footer .heading a {
+  font-size: medium;
+}
+footer .footer .heading ul li a {
+  line-height: 2;
+}
+footer .footer .heading .social {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+footer .footer .heading .social a {
+  background: #3477f2;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  padding: 7px;
+}
+footer .footer .heading .inp p {
+  font-size: 16px;
+  margin-top: 1rem;
+}
+footer .footer .heading .inp .input {
+  display: flex;
+  width: 100%;
+  margin-top: 30px;
+  background: #eeeeee;
+}
+footer .footer .heading .inp .input input {
+  background: none;
+  padding: 10px;
+  flex: 1;
+}
+footer .footer .heading .inp .input button {
+  background: #0000ff;
+  color: #ffffff;
+  font-weight: 600;
+  padding: 7px;
+}
+footer .footer .bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 40%;
+}
+footer .footer .bottom .link {
+  line-height: 2;
+}
+footer .footer .bottom .select div {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+footer .footer .bottom .select select {
+  background: #eeeeee;
+  border: none;
+  width: 100%;
+  padding: 0.35em 50px 0.35em 0.75em;
+}
+footer .footer .bottomBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+footer .footer .bottomBar ul {
+  display: flex;
+  gap: 2rem;
+}
+footer .footer .bottomBar .logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media screen and (max-width: 1260px) {
+  header nav {
+    background: #0000ff;
+  }
+  header nav .nav {
+    display: none;
+  }
+  header nav *,
+  header nav svg {
+    color: white;
+    fill: white;
+  }
+  header nav ul,
+  header nav li {
+    display: flex;
+    flex-direction: column;
+  }
+  header .logoContainer {
+    display: flex;
+    gap: 30px;
+  }
+  header .logoContainer a svg {
+    width: 60px;
+    height: 27px;
+  }
+  header .logoContainer .smNav {
+    font-size: 1.3rem;
+    background: none;
+    display: block;
+  }
+  header .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  header .nav .logo_link ul {
+    display: flex;
+    flex-direction: column;
+  }
+  header .navContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+}
