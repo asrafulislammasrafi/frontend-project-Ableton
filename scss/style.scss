@@ -64,7 +64,32 @@ body {
   background: #ffffff;
   min-height: 100vh;
 }
+header.active {
+  * {
+    color: white;
+    fill: #ffffff;
+  }
+  nav{
+    .activeNav{
+      animation: anime .4s ease-out;
+    }
+  }
+}
+
+@keyframes anime {
+  0%{
+ transform: translateY(-100%);
+  }
+  100%{
+    transform: translateY(0);
+
+
+  }
+}
 header {
+  .activeNav {
+    width: 100%;
+  }
   nav {
     padding: 0 2.4rem;
     border-bottom: 1px solid #e7e5e5;
@@ -89,7 +114,7 @@ header {
     padding: 2rem 0;
     display: flex;
     justify-content: start;
-    align-items: center;
+    align-items: start;
     gap: 20px;
   }
   .nav {
@@ -457,17 +482,10 @@ footer {
 
 @media screen and (max-width: 1260px) {
   header {
-  
+    .activeNav {
+      display: none;
+    }
     nav {
-      .nav{
-        display: none;
-      }
-      background: #0000ff;
-      *,
-      svg {
-        color: white;
-        fill: white;
-      }
       ul,
       li {
         display: flex;
@@ -508,4 +526,3 @@ footer {
     align-items: start;
   }
 }
-

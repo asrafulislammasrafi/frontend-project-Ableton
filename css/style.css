@@ -46,6 +46,25 @@ body {
   min-height: 100vh;
 }
 
+header.active * {
+  color: white;
+  fill: #ffffff;
+}
+header.active nav .activeNav {
+  animation: anime 0.4s ease-out;
+}
+
+@keyframes anime {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+header .activeNav {
+  width: 100%;
+}
 header nav {
   padding: 0 2.4rem;
   border-bottom: 1px solid #e7e5e5;
@@ -66,7 +85,7 @@ header .navContainer {
   padding: 2rem 0;
   display: flex;
   justify-content: start;
-  align-items: center;
+  align-items: start;
   gap: 20px;
 }
 header .nav {
@@ -90,7 +109,6 @@ header .smNav {
   display: none;
 }
 header .login a:nth-child(1) {
-  color: #0000ff;
   margin-right: 2rem;
 }
 header .about a {
@@ -429,16 +447,8 @@ footer .footer .bottomBar .logo {
 }
 
 @media screen and (max-width: 1260px) {
-  header nav {
-    background: #0000ff;
-  }
-  header nav .nav {
+  header .activeNav {
     display: none;
-  }
-  header nav *,
-  header nav svg {
-    color: white;
-    fill: white;
   }
   header nav ul,
   header nav li {
